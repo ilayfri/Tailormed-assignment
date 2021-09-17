@@ -1,0 +1,6 @@
+.card-header.collapsed {
+    background:#ccc;
+}
+.card-header:not(.collapsed) {
+    background:#ee6666;
+}
