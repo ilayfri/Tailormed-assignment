@@ -11,7 +11,7 @@ const ProgramsEventEmitter = Program.watch();
 const io = socketIo(server, { cors: { origin: "*" } });
 const port = process.env.PORT || 4001;
 
-// set connection to DB
+// set a connection to DB
 console.log("[set a connection for DB..]");
 mongoose
   .connect(
@@ -22,7 +22,7 @@ mongoose
     console.log("[DB connected!]");
     let interval;
     
-    // create socket
+    // create a socket
     io.on("connection", (socket) => {
       console.log(`New client connected [id: ${socket.id}]`);
 
